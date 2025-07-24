@@ -1,0 +1,14 @@
+name: mocha
+description:  A client library for Dart to work with the REST API of Mocha.
+version: 0.1.0
+homepage: https://github.com/alyxshang/mocha.dart
+repository: https://github.com/alyxshang/mocha.dart
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  http: ^1.4.0
+
+dev_dependencies:
+  test: ^1.24.0

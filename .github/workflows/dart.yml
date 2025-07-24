@@ -1,0 +1,15 @@
+name: "Mocha.dart CI"
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: "Setup Dart."
+        uses: dart-lang/setup-dart@v1
+
+      - name: "Fetching dependencies."
+        run: dart pub get
+
+      - name: "Run tests."
+        run: dart test
